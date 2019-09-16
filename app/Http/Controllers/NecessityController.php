@@ -25,6 +25,8 @@ class NecessityController extends Controller
 
         $data->name = request('name');
         $data->save();
+
+        return $data;
     }
 
     public function destroy()
